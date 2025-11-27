@@ -1,0 +1,71 @@
+@include tablet {
+  .contenedor-anuncios {
+    @include grid(3, 2rem);
+  }
+}
+
+.anuncio {
+  background-color: lighten($gris, 5);
+  border: 1px solid darken($gris, 10);
+  margin-bottom: 2rem;
+
+  /* IMAGEN: CUADRADA, SIN DEFORMARSE */
+  img {
+    width: 100%;
+    aspect-ratio: 1 / 1;   // <- la hace un cuadrado
+    object-fit: cover;     // recorta pero no estira
+    display: block;
+  }
+
+  .contenido-anuncio {
+    padding: 2rem;
+  }
+
+  h3,
+  p {
+    margin: 0;
+  }
+}
+
+.precio {
+    font-size: 3.6rem;
+    font-weight: $black;
+    margin: 0 0 1rem 0;
+    color: $verde;                    // tu color verde actual
+
+    display: inline-block;
+    padding-bottom: .5rem;
+    letter-spacing: 1px;
+}
+
+.iconos-caracteristicas {
+    display: flex;
+    justify-content: flex-start;   // ← los manda a la izquierda
+    align-items: center;
+    gap: 3rem;                     // separación pareja
+    list-style: none;
+    padding: 1.5rem 0;
+    margin: 0;
+    width: 100%;
+    color: white;                   // ocupan el ancho, pero sin centrarse
+}
+
+.iconos-caracteristicas li {
+    display: flex;
+    flex-direction: column;        // icono arriba, texto abajo
+    align-items: center;           // pero cada uno está centrado internamente
+    text-align: center;
+}
+
+.iconos-caracteristicas img {
+    width: 6rem;
+    height: 6rem;
+    object-fit: contain;
+    display: block;
+}
+
+.iconos-caracteristicas p {
+    font-size: 1.5rem;
+    font-weight: $bold;
+    margin-top: .3rem;
+}

@@ -1,0 +1,73 @@
+# ============================
+#   PHP / MVC Project
+# ============================
+
+# Archivos de entorno (si los usás)
+.env
+.env.local
+*.env
+
+# Configuración sensible
+config/*.local.php
+config/*.env.php
+
+
+# ============================
+#   Composer
+# ============================
+vendor/
+composer.lock
+
+
+# ============================
+#   Node & Gulp
+# ============================
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+
+
+# ============================
+#   Gulp Build Output
+# ============================
+public/build/
+public/build/css/
+public/build/js/
+public/build/img/
+
+
+# ============================
+#   Cache / Temp
+# ============================
+*.cache
+*.tmp
+*.log
+.DS_Store
+Thumbs.db
+
+
+# ============================
+#   IDE / Editors
+# ============================
+.vscode/
+.idea/
+*.code-workspace
+
+
+# ============================
+#   Sistema operativo
+# ============================
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Linux
+*~
