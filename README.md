@@ -24,8 +24,7 @@ Agrega tus capturas en una carpeta `readme-assets/` y enlazalas así:
 
 `` md
 Home
-![Home](https://raw.githubusercontent.com/Maty1337/bienesraicesMVC/main/readme-assets/home.png)
-![Home 1](https://raw.githubusercontent.com/Maty1337/bienesraicesMVC/main/readme-assets/home1.png)
+
 ![Home 2](https://raw.githubusercontent.com/Maty1337/bienesraicesMVC/main/readme-assets/home2.png)
 ![Home 3](https://raw.githubusercontent.com/Maty1337/bienesraicesMVC/main/readme-assets/home3.png)
 
